@@ -1,0 +1,12 @@
+<div class="fluid-container">
+    <h1 class="text-center mt-4">{{title}}</h1>
+    <div *ngFor="let x of data">
+        <h2 class="text-center ">
+            <a routerLink="/card/{{x.id}}">
+                {{x.question}}
+            </a>
+
+        </h2>
+        <p class="text-default">{{x.answer}}</p>
+    </div>
+</div>

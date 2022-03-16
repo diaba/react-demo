@@ -1,0 +1,18 @@
+
+<div class="container-wrapper">
+  <div class="left">
+    <ul class="nav flex-column" *ngFor="let x of data">
+      <li class="nav-item">
+        <a routerLink="/card/{{x.id}}">
+          {{x.question}}
+        </a>
+      
+      </li>
+    
+    </ul>
+  </div>
+  <div class="right">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
